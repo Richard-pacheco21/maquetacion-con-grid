@@ -1,0 +1,81 @@
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0; 
+}
+
+h1 {
+    font-size: 2em; 
+    margin-bottom: 20px; /
+}
+
+#container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 150px 150px 150px; 
+    gap: 10px; 
+    width: 800px; 
+    border: 2px solid #ccc; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.caja {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 1.5em; 
+}
+
+.uno {
+    grid-column: 1 / 2; 
+    grid-row: 1/ 4; 
+    background-color: green; 
+}
+
+.dos {
+    grid-column: 2 / 4; 
+    grid-row: 1 / 2; 
+    background-color: green; 
+}
+
+.tres {
+    grid-column: 4 / 5; 
+    grid-row: 1 / 2; 
+    background-color: red; 
+}
+
+.cuatro {
+    grid-column: 4 / 5; 
+    grid-row: 2 / 4; 
+    background-color: green; 
+}
+
+.cinco {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    background-color: orange; 
+}
+
+.seis {
+    grid-column: 3 / 4; 
+    grid-row: 3 / 4; 
+    background-color: orange; 
+}
+
+.siete {
+    grid-column: 3 / 4; 
+    grid-row: 2 / 3; 
+    background-color: red; 
+}
+
+.ocho {
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4; 
+    background-color: red; 
+}
